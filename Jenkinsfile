@@ -1,11 +1,17 @@
 pipeline { 
     agent any  
     stages { 
-        stage('Build') { 
+        stage('sample1') {
+          steps {
+            echo 'summition'
+          }
+        }
+        stage('sample 2') { 
             steps { 
-               echo 'This is a minimal pipeline.' 
-               sh 'mvn package'
+               echo 'addition...' 
+               bat 'python main.py'
+              
             }
         }
-    }
+   }
 }
