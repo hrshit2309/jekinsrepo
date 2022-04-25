@@ -10,7 +10,7 @@ pipeline {
             steps { 
                echo 'addition...' 
                bat 'python main.py'
-              
+               bat 'mvn package'
             }
         }
    }
